@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Electron Practice App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
 <div style="display: flex; justify-content: center; width: 100%;">
-<h1>Brandon Electron Test App</h1>
+    <h1>Brandon Electron Test App</h1>
+</div>
+<div style="display: flex; justify-content: center; width: 100%;" fxFill>
+    <div id="output"></div>
 </div>
 </body>
+<script>
+    console.log(process);
+    let output = '<table class="table" <thead><tr><th>Name</th> <th>Version</th></tr></thead> <tbody><tr><td>Node: ${process.versions.node}</td><td>Test 2</td></tr></tbody>'
+
+    document.getElementById('output').innerHTML = output;
+</script>
 <script>
     require('./renderer.js');
 </script>
