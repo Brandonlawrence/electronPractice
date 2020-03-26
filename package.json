@@ -1,0 +1,13 @@
+{
+  "name": "practiceapp",
+  "version": "1.0.0",
+  "description": " Practice Electron App",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "monti",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^8.2.0"  }
+}
